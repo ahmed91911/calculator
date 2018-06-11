@@ -1,0 +1,83 @@
+ <html>
+<head>
+ <meta charset="UTF-8">
+ <title></title>
+ <style type="text/css">
+     #A{
+         position: relative;
+         top: -62px;
+         left: 150px;
+         height: 250px
+             
+         
+     }
+     
+     #one{
+         position: relative;
+         padding: 110px;
+         font-size: 70px;
+         border-color: red;
+         right: 35px;
+     }
+     #display{
+         position: relative;
+         top: -100px;
+         right: 35px;
+         height: 300px;
+         width: 910px;
+         font-size: 100px;
+         border-color: red;
+         background-color:antiquewhite;
+     }
+ input[type=button] {
+ width: 2em;  height: 2em;
+ }
+ </style>
+</head>
+<body>
+    <div id="one">
+<form name="calculator">
+<table align="center">
+ <tr>
+ <td colspan="4"><input id="display" type="text" name="display" size="8"></td>
+ </tr>
+ <tr>
+ <td><input type="button" id = "one" name="C" value="C" onclick="calculator.display.value = '' "></td>
+ <td><input type="button" id="one"="x2" value="x2" onclick="calculator.display.value = eval(calculator.display.value*calculator.display.value)"></td>
+ <td><input type="button" id="one"name="%" value="%" onclick="calculator.display.value = (eval(calculator.display.value)/100)"></td>
+ <td><input type="button" id="one"name="/" value="/" onclick="calculator.display.value += '/' "></td>
+ </tr>
+ <tr>
+ <td><input type="button" id="one"name="7" value="7" onclick="calculator.display.value += '7' "></td>
+ <td><input type="button" id="one"name="8" value="8" onclick="calculator.display.value += '8' "></td>
+ <td><input type="button" id="one"name="9" value="9" onclick="calculator.display.value += '9' "></td>
+ <td><input type="button" id="one"name="X" value="X" onclick="calculator.display.value += '*' "></td>
+ </tr>
+ <tr>
+ <td><input type="button" id="one"name="4" value="4" onclick="calculator.display.value += '4' "></td>
+ <td><input type="button" id="one"name="5" value="5" onclick="calculator.display.value += '5' "></td>
+ <td><input type="button" id="one" name="6" value="6" onclick="calculator.display.value += '6' "></td>
+ <td><input type="button" id="one" name="-" value="-" onclick="calculator.display.value += '-' "></td>
+ </tr>
+ <tr>
+ <td><input type="button" id="one" name="1" value="1" onclick="calculator.display.value += '1' "></td>
+ <td><input type="button" id="one" name="2" value="2" onclick="calculator.display.value += '2' "></td>
+ <td><input type="button" id="one" name="3" value="3" onclick="calculator.display.value += '3' "></td>
+ <td><input type="button" id="one" name="+" value="+" onclick="calculator.display.value += '+' "></td>
+ </tr>
+ <tr>
+ <td><input type="button" id="one" name="0" value="0" onclick="calculator.display.value += '0' "></td>
+ <td><input type="button" id="one" name="00" value="00" onclick="calculator.display.value += '00' "></td>
+ <td><input type="button" id="one" name="." value="." onclick="calculator.display.value += '.' "></td>
+ <td><input type="button" id="one" name="=" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+ </tr>
+</table>
+</form>
+    <div>
+        
+        <img id="A" src="logo.png"> 
+        
+    </div>    
+  
+</body>
+</html>
